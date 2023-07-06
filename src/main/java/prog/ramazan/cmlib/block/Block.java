@@ -46,7 +46,7 @@ public class Block implements Runnable {
             try {
                 repeatableAction.action();
             } catch (Exception e) {
-                logger.error("unexpected error", e);
+                logger.error("{}: unexpected error", name, e);
             }
         }
     }
